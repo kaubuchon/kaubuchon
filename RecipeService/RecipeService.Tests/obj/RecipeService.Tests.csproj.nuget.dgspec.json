@@ -1,0 +1,324 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\repos\\kaubuchon\\RecipeService\\RecipeService.Tests\\RecipeService.Tests.csproj": {}
+  },
+  "projects": {
+    "C:\\repos\\kaubuchon\\RecipeService\\RecipeService.DomainTypes\\RecipeService.DomainTypes.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\repos\\kaubuchon\\RecipeService\\RecipeService.DomainTypes\\RecipeService.DomainTypes.csproj",
+        "projectName": "RecipeService.DomainTypes",
+        "projectPath": "C:\\repos\\kaubuchon\\RecipeService\\RecipeService.DomainTypes\\RecipeService.DomainTypes.csproj",
+        "packagesPath": "C:\\Users\\KAUBUCHON\\.nuget\\packages\\",
+        "outputPath": "C:\\repos\\kaubuchon\\RecipeService\\RecipeService.DomainTypes\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\KAUBUCHON\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\ServiceFabricSDK.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\Microsoft SDKs\\Service Fabric\\packages": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\repos\\kaubuchon\\RecipeService\\RecipeService.Interfaces\\RecipeService.Interfaces.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\repos\\kaubuchon\\RecipeService\\RecipeService.Interfaces\\RecipeService.Interfaces.csproj",
+        "projectName": "RecipeService.Interfaces",
+        "projectPath": "C:\\repos\\kaubuchon\\RecipeService\\RecipeService.Interfaces\\RecipeService.Interfaces.csproj",
+        "packagesPath": "C:\\Users\\KAUBUCHON\\.nuget\\packages\\",
+        "outputPath": "C:\\repos\\kaubuchon\\RecipeService\\RecipeService.Interfaces\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\KAUBUCHON\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\ServiceFabricSDK.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\Microsoft SDKs\\Service Fabric\\packages": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\repos\\kaubuchon\\RecipeService\\RecipeService.DomainTypes\\RecipeService.DomainTypes.csproj": {
+                "projectPath": "C:\\repos\\kaubuchon\\RecipeService\\RecipeService.DomainTypes\\RecipeService.DomainTypes.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\repos\\kaubuchon\\RecipeService\\RecipeService.Tests\\RecipeService.Tests.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\repos\\kaubuchon\\RecipeService\\RecipeService.Tests\\RecipeService.Tests.csproj",
+        "projectName": "RecipeService.Tests",
+        "projectPath": "C:\\repos\\kaubuchon\\RecipeService\\RecipeService.Tests\\RecipeService.Tests.csproj",
+        "packagesPath": "C:\\Users\\KAUBUCHON\\.nuget\\packages\\",
+        "outputPath": "C:\\repos\\kaubuchon\\RecipeService\\RecipeService.Tests\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\KAUBUCHON\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\ServiceFabricSDK.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\Microsoft SDKs\\Service Fabric\\packages": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\repos\\kaubuchon\\RecipeService\\RecipeService.DomainTypes\\RecipeService.DomainTypes.csproj": {
+                "projectPath": "C:\\repos\\kaubuchon\\RecipeService\\RecipeService.DomainTypes\\RecipeService.DomainTypes.csproj"
+              },
+              "C:\\repos\\kaubuchon\\RecipeService\\RecipeService.Interfaces\\RecipeService.Interfaces.csproj": {
+                "projectPath": "C:\\repos\\kaubuchon\\RecipeService\\RecipeService.Interfaces\\RecipeService.Interfaces.csproj"
+              },
+              "C:\\repos\\kaubuchon\\RecipeService\\RecipeService\\RecipeService.csproj": {
+                "projectPath": "C:\\repos\\kaubuchon\\RecipeService\\RecipeService\\RecipeService.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.NET.Test.Sdk": {
+              "target": "Package",
+              "version": "[16.11.0, )"
+            },
+            "coverlet.collector": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.0, )"
+            },
+            "xunit": {
+              "target": "Package",
+              "version": "[2.4.1, )"
+            },
+            "xunit.runner.visualstudio": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.4.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\repos\\kaubuchon\\RecipeService\\RecipeService\\RecipeService.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\repos\\kaubuchon\\RecipeService\\RecipeService\\RecipeService.csproj",
+        "projectName": "RecipeService",
+        "projectPath": "C:\\repos\\kaubuchon\\RecipeService\\RecipeService\\RecipeService.csproj",
+        "packagesPath": "C:\\Users\\KAUBUCHON\\.nuget\\packages\\",
+        "outputPath": "C:\\repos\\kaubuchon\\RecipeService\\RecipeService\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\KAUBUCHON\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\ServiceFabricSDK.config"
+        ],
+        "originalTargetFrameworks": [
+          "net6.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\Microsoft SDKs\\Service Fabric\\packages": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net6.0": {
+            "targetAlias": "net6.0",
+            "projectReferences": {
+              "C:\\repos\\kaubuchon\\RecipeService\\RecipeService.DomainTypes\\RecipeService.DomainTypes.csproj": {
+                "projectPath": "C:\\repos\\kaubuchon\\RecipeService\\RecipeService.DomainTypes\\RecipeService.DomainTypes.csproj"
+              },
+              "C:\\repos\\kaubuchon\\RecipeService\\RecipeService.Interfaces\\RecipeService.Interfaces.csproj": {
+                "projectPath": "C:\\repos\\kaubuchon\\RecipeService\\RecipeService.Interfaces\\RecipeService.Interfaces.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.Extensions.Configuration": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.Extensions.DependencyInjection": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Microsoft.Extensions.Hosting": {
+              "target": "Package",
+              "version": "[6.0.0, )"
+            },
+            "Serilog.AspNetCore": {
+              "target": "Package",
+              "version": "[4.1.0, )"
+            },
+            "Serilog.Settings.Configuration": {
+              "target": "Package",
+              "version": "[3.3.0, )"
+            },
+            "Serilog.Sinks.Console": {
+              "target": "Package",
+              "version": "[3.1.1, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.2.3, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
