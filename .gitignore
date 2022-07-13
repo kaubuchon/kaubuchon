@@ -1,2 +1,10 @@
 bin/*.*
 obj/*.*
+RecipeService\RecipeService\bin
+RecipeService\RecipeService\obj
+RecipeService\RecipeService.DomainTypes\bin
+RecipeService\RecipeService.DomainTypes\obj
+RecipeService\RecipeService.Interfaces\bin
+RecipeService\RecipeService.Interfaces\obj
+RecipeService\RecipeService.Tests\bin
+RecipeService\RecipeService.Tests\obj
