@@ -14,6 +14,8 @@ namespace RecipeService.DataSources
         string recipeFolder;
         Dictionary<RecipeID,Recipe> _recipes;
         ILogger<FileData> _logger;
+
+        long baseIndex = 1000L;
         /// <summary>
         /// ctor for testing
         /// </summary>
@@ -42,7 +44,6 @@ namespace RecipeService.DataSources
                     _logger.LogError(ex, "FileData:IDataSource error, RecipeFolder={0}", recipeFolder);
                 throw;
             }
-
         }
 
         #region interface impl
@@ -95,13 +96,45 @@ namespace RecipeService.DataSources
             }
             return links;
         }
+        public RecipeLink CreateRecipe(Recipe recipe)
+        {
+            (var success, var errorMessage) = IsValidRecipe(recipe);
+            if (!success)
+            {
+                _logger.LogWarning("CreateRecipe error:{0}", errorMessage);
+                throw new Exception("CreateRecipe failed");
+            }
+            var files = Directory.GetFiles(recipeFolder);
+
+            long newRecipeId = this.baseIndex + files.Count() + 1L;
+            var uri = new Uri(String.Format("recipe//{0}", newRecipeId), UriKind.Relative);
+
+            var dbg = uri.ToString();
+            _logger.LogInformation("RecipeName={0}, RecipeLink={1}", recipe.namen.Name, uri.ToString());
+            return new RecipeLink(recipe.namen, uri);
+        }
         #endregion
         #region implementation details
+        internal (bool,string) IsValidRecipe(Recipe recipe)
+        {
+            if (string.IsNullOrEmpty(recipe.namen.Name))
+                return (false,"name is missing or empty");
+
+            if (recipe.instructions.Count < 1 || recipe.ingredients.Count < 1)
+                return (false, "ingredients or instructions is missing");
+
+            if (recipe.instructions.All(s => string.IsNullOrEmpty(s.Val)))
+                return (false, "none of instructions are valid");
+
+            if (recipe.ingredients.All(s => string.IsNullOrEmpty(s.Val)))
+                return (false, "none of ingredients are valid");
+
+            return (true, "");
+        }
         internal Dictionary<RecipeID, Recipe> LoadRecipeData()
         {
             var files = Directory.GetFiles(recipeFolder);
 
-            long baseIndex = 1000L;
             Dictionary < RecipeID, Recipe > dict = new Dictionary<RecipeID, Recipe> ();
             foreach (string file in files)
             {
@@ -297,4 +330,5 @@ namespace RecipeService.DataSources
 
        
     }
-}
+
+   }

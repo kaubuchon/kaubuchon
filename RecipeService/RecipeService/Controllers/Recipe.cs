@@ -17,6 +17,29 @@ namespace RecipeService.Controllers
             _data = dataSource;
             _logger = logger;
         }
+        [HttpPost]
+        [Route("recipe")]
+        public IActionResult CreateRecipe(RecipeService.DomainTypes.Recipe newRecipe)
+        {
+            try
+            {
+                _logger.LogInformation("ENTER Recipe.Create()");
+                RecipeLink link = _data.CreateRecipe(newRecipe);
+              
+                _logger.LogInformation("Recipe.CreateRecipe() {0} returned", link.recipeLink);
+
+                return new OkObjectResult(link);
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError(ex, "/recipe (CreateRecipe)");
+                return BadRequest(ex.Message);
+            }
+            finally
+            {
+                _logger.LogInformation("EXIT Recipe.Create()");
+            }
+        }
        
         [HttpGet]
         [Route("recipe")]
@@ -33,6 +56,7 @@ namespace RecipeService.Controllers
             }
             catch(Exception ex)
             {
+                _logger.LogError(ex, "recipe");
                 return BadRequest(ex.Message);
             }
             finally
@@ -61,6 +85,7 @@ namespace RecipeService.Controllers
             }
             catch(Exception ex)
             {
+                _logger.LogError(ex, "recipe/{0}", id);
                 return BadRequest(ex.Message);
             }
           
@@ -78,6 +103,7 @@ namespace RecipeService.Controllers
             }
             catch (Exception ex)
             {
+                _logger.LogError(ex, "recipe/ingredient/{0}",string.IsNullOrEmpty(ingredientName)?"null":ingredientName);
                 return BadRequest(ex.Message);
             }
 

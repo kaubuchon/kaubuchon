@@ -8,6 +8,11 @@ namespace RecipeService.DataSources
     /// </summary>
     public class RecipeDatabase : IDataSource
     {
+        public RecipeLink CreateRecipe(Recipe recipe)
+        {
+            throw new NotImplementedException();
+        }
+
         public Optional<Recipe> GetRecipe(RecipeID id)
         {
             throw new NotImplementedException();
