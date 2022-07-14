@@ -8,3 +8,5 @@ RecipeService/RecipeService.Interfaces/bin
 RecipeService/RecipeService.Interfaces/obj
 RecipeService/RecipeService.Tests/bin
 RecipeService/RecipeService.Tests/obj
+RecipeService/*.suo
+.vs
