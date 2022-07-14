@@ -16,18 +16,19 @@ GET
 `/recipe/ingredient/{ingredient-name}` -> return a list of recipe name and URL pairs that use the ingredient in the request
 
 POST
+
 `/recipe` -> creates a recipe in the data store, returns the unique URL for it
 
 ## RecipeService projects
 
 ### RecipeService.DomainTypes
 The datatypes used by the service and client. In this small project there aren't any internal only datatypes so I have only 
-one project for datatypes. A more realistic service may separate client datatypes into a separate DLL to help .NET client
-send/recieve requests.
+one project for all datatypes. A more realistic service may separate client datatypes into a separate DLL to help a .NET client
+send/recieve requests. (A non .NET client would need to send the correct json request)
 
 ### RecipeService.Interfaces
-The interfaces used by the RecipeService. The data source that contains the recipes is abstracted from service via
-the IDataSource interface. This interface must be implemented for different datastores (i.e. database, blobs, etc). This
+The interfaces used by the RecipeService. The data source that contains the recipes is abstracted from the service via
+the IDataSource interface. This interface must be implemented for each datastore (i.e. database, blobs, etc). This
 sample application stores the recipes as text files in a local folder.
 
 ### RecipeService
@@ -52,19 +53,19 @@ This interface is the central functionality of the service.
 
 **List<RecipeLink> GetRecipes();**
 
-Returns all recipes.
+    Returns all recipes.
 
 **Optional<Recipe> GetRecipe(RecipeID id);**
 
-Returns one recipe indicated by the RecipeID object. To handle the case where the RecipeID is not found an Optional instance is returned.
+    Returns one recipe indicated by the RecipeID object. To handle the case where the RecipeID is not found an Optional instance is returned.
 
-** List<RecipeLink> GetRecipes(string ingredientName);**
+**List<RecipeLink> GetRecipes(string ingredientName);**
 
-Returns a list of recipes that use the ingredient passed in the request.
+    Returns a list of recipes that use the ingredient passed in the request.
 
 **RecipeLink CreateRecipe(Recipe recipe);**
 
-This method is used to create a new Recipe object in the data store, using the Recipe object passed from the caller.
+    This method is used to create a new Recipe object in the data store, using the Recipe object passed from the caller.
 
 
 ### Testing
