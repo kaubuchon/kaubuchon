@@ -1,0 +1,69 @@
+{
+	"info": {
+		"_postman_id": "80a5d04d-815f-49cb-9b9a-11c06f8326b2",
+		"name": "RecipeServiceCollection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "6264463"
+	},
+	"item": [
+		{
+			"name": "AllRecipes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44354/recipe",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44354",
+					"path": [
+						"recipe"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Specific Recipe",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44354/recipe",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44354",
+					"path": [
+						"recipe"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ingredient",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:44354/recipe/ingredient/butter",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "44354",
+					"path": [
+						"recipe",
+						"ingredient",
+						"butter"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
